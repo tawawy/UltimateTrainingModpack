@@ -30,7 +30,7 @@ pub static mut FIGHTER_MANAGER_ADDR: usize = 0;
 pub static mut STAGE_MANAGER_ADDR: usize = 0;
 
 pub fn is_training_mode() -> bool {
-true
+true 
 }
 pub fn get_category(module_accessor: &mut app::BattleObjectModuleAccessor) -> i32 {
     return (module_accessor.info >> 28) as u8 as i32;
